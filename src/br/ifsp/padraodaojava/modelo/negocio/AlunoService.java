@@ -12,6 +12,10 @@ public class AlunoService {
 	public void inserirAluno(Aluno novoAluno) throws Exception {
 		// Validações de regras de negócio sobre o aluno
 		// this.validarAluno(novoAluno)
+		inserirAlunoBD(novoAluno);
+	}
+
+	private void inserirAlunoBD(Aluno novoAluno) throws Exception, SQLException {
 		Connection conexao = null;
 		try {
 			// Abre conexão com o banco de dados
