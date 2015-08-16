@@ -6,9 +6,9 @@ import br.ifsp.padraodaojava.modelo.entidade.Aluno;
 
 public interface AlunoDAO {
 
-	public void inserir(Aluno modelo) throws Exception;
+	public void inserir(Aluno aluno) throws Exception;
 
-	public void atualizar(Aluno modelo) throws Exception;
+	public void atualizar(Aluno aluno) throws Exception;
 
 	public void remover(Long id) throws Exception;
 

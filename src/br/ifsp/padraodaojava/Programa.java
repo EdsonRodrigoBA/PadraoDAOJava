@@ -8,7 +8,7 @@ public class Programa {
 
 	public static void main(String args[]) throws Exception {
 		AlunoService alunoService = new AlunoService(new AlunoPostgresDAO());
-		Aluno novoAluno = new Aluno("João", "121.999.999-99");
+		Aluno novoAluno = new Aluno("João", "999.999.999-99");
 
 		try {
 			alunoService.inserirAluno(novoAluno);
